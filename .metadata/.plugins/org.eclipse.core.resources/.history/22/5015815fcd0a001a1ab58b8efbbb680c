@@ -1,0 +1,11 @@
+package com.loan.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Account {
+	@Id
+	private String accountno;
+	private double balance;
+}

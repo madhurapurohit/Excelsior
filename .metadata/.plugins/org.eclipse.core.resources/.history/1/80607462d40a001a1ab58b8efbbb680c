@@ -1,0 +1,6 @@
+package com.loan.dao;
+
+public interface UserLoginDao {
+
+	public int readLogin(String username, String password);
+}

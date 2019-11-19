@@ -1,0 +1,11 @@
+package com.loan.service;
+
+public class UserLoginImpl implements UserLoginService{
+
+	@Override
+	public boolean checkLogin(String username, String password) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

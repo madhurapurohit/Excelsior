@@ -1,0 +1,16 @@
+package com.loan.dao;
+
+public class UserLoginDaoImpl implements UserLoginDao {
+
+
+	@Override
+	public int readLogin() {
+		String jpql = "Select u From Users u Where u.username=:user And u.password=:pass";
+		TypedQuery<Users> tquery = entityManager.createQuery(jpql, Users.class);
+		tquery.setParameter("user", username);
+		tquery.setParameter("pass", password);
+		List<Users> list = tquery.getResultList();
+		return list.size();
+		return false;
+	}
+}

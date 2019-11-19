@@ -1,0 +1,30 @@
+package com.loan.dao;
+
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.TypedQuery;
+
+import com.loan.model.UserRegistration;
+
+
+
+public class UserLoginDaoImpl implements UserLoginDao {
+	EntityManager entityManager;
+
+	public UserLoginDaoImpl(){
+	entityManager = JpaUtils.getEntityManager();
+	}
+	}
+	@Override
+	public int readLogin() {
+		String jpql = "Select u From Users u Where u.username=:user And u.password=:pass";
+		TypedQuery<UserRegistration> tquery = entityManager.createQuery(jpql, UserRegistration.class);
+		tquery.setParameter("user", username);
+		tquery.setParameter("pass", password);
+		List<UserRegistration> list = tquery.getResultList();
+		return list.size();
+		
+	}
+}

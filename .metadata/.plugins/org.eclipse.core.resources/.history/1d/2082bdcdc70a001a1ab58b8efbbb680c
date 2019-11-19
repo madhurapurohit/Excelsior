@@ -1,0 +1,18 @@
+package com.loan.model;
+
+import java.util.Date;
+
+public class UserRegistration {
+	
+	private String fname;
+	private String mname;
+	private String lname;
+	private String email;
+	private String pwd;
+	private String mob;
+	private String nationality;
+	private Date dob;
+	private String gender;
+
+
+}

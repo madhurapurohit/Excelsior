@@ -1,0 +1,18 @@
+package com.loan.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Income {
+
+	private String propertyloc;
+	private String propertyname;
+	private long proprertyvalue;
+	private String employementtype;
+	private String orgtype;
+	private String employername;
+	
+	
+	
+	
+}

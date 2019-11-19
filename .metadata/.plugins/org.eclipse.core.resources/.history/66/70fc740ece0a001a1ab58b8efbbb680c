@@ -1,0 +1,18 @@
+package com.loan.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="document_details")
+public class Document {
+
+	@Id
+	private String userid;
+	private String pan;
+	private String aadhar;
+	private String voterid;
+	private String docpath;
+	
+}

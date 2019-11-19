@@ -1,0 +1,10 @@
+package com.loan.model;
+
+public class Document {
+
+	private String pan;
+	private String aadhar;
+	private string voterid;
+	private string docpath;
+	
+}

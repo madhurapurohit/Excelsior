@@ -1,0 +1,14 @@
+package com.loan.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Document {
+
+	private String userid;
+	private String pan;
+	private String aadhar;
+	private String voterid;
+	private String docpath;
+	
+}
